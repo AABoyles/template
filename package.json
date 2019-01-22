@@ -1,0 +1,31 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "description": "This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy.  Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/template.js > dist/template.js && babel --minified src/template.js > dist/template.min.js",
+    "doc": "documentation build src/** -f md -o docs",
+    "demo": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CDCgov/template.git"
+  },
+  "author": "Tony Boyles <nsp3@cdc.gov>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CDCgov/template/issues"
+  },
+  "homepage": "https://github.com/CDCgov/template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "benchmark": "^2.1.4",
+    "documentation": "^9.1.1",
+    "http-server": "^0.11.1",
+    "jest": "^23.6.0",
+    "microtime": "^2.1.8"
+  }
+}
