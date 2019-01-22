@@ -7,6 +7,7 @@
     "test": "jest",
     "build": "babel src/template.js > dist/template.js && babel --minified src/template.js > dist/template.min.js",
     "doc": "documentation build src/** -f md -o docs",
+    "benchmark": "nodejs benchmark/test.js",
     "demo": "http-server"
   },
   "repository": {
