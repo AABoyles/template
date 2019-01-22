@@ -4,9 +4,27 @@ This repository was created for use by CDC programs to collaborate on public hea
 ## ----- Start of respository specific READ ME -----
 ### This repository specific READ ME instructions go here
 
-Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
+To set up this readme, replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
+
+To set up this repository, clone it:
+
+```bash
+git clone https://github.com/aaboyles/template.git
+cd template
+```
+Then do a project-wide search-and-replace on 'template' with your project's name.
+
+```bash
+sed -i 's/template/<Your Project Name>/g' *
+```
+
+Finally, install your dependencies and start developing!
+
+```bash
+npm install
+```
 ## ----- End of respository specific READ ME -----
-  
+
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
@@ -74,4 +92,3 @@ that were very useful in setting up this GitHub organization. Thanks to CDC's
 that was helpful in modeling the code of conduct.
 
 ## ----- for use in template only -----
-
