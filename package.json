@@ -4,12 +4,14 @@
   "description": "This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy.  Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist/*.js",
-    "test": "jest",
-    "build": "babel src/template.js > dist/template.js && terser dist/template.js > dist/template.min.js",
-    "doc": "documentation build src/** -f md -o docs",
     "benchmark": "nodejs benchmark/test.js",
-    "demo": "http-server"
+    "build": "babel src/template.js > dist/template.js",
+    "bump": "npm version patch",
+    "clean": "rimraf dist/*.js",
+    "demo": "npx http-server",
+    "doc": "documentation build src/** -f md -o docs",
+    "minify": "terser dist/template.js > dist/template.min.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,6 @@
     "@babel/core": "^7.2.2",
     "benchmark": "^2.1.4",
     "documentation": "^9.1.1",
-    "http-server": "^0.11.1",
     "jest": "^23.6.0",
     "microtime": "^2.1.8",
     "rimraf": "^2.6.3",
